@@ -1,0 +1,259 @@
+<header class="header">
+        <a href="#" class="logo">
+            <!-- Add the class icon to your logo image or logo icon to add the margining -->
+            Cognizant NIC
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+        </nav>
+    </header>
+
+
+
+<style>
+  #map_canvas {
+    width: 100%;
+    height: 400px;
+  }
+</style>
+
+
+
+
+
+ <div class="wrapper row-offcanvas row-offcanvas-left">
+        <!-- Left side column. contains the logo and sidebar -->
+        <!-- Right side column. Contains the navbar and content of the page -->
+        <aside class="right-side">
+            <!-- Content Header (Page header) -->
+            <section class="content-header"></section>
+            <!-- Main content -->
+            <section class="content-header">
+                <!-- start -->
+                <div class="box box-warning">
+                    <div class="box-header">
+                        <i class="fa fa-bar-chart-o"></i>
+                        <h3 class="box-title">Metrics </h3>
+                        <div class="pull-right box-tools">
+                            <button class="btn btn-warning btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                            <button class="btn btn-warning btn-sm" data-widget='remove' data-toggle="tooltip" title="Remove" style="margin-right: 5px;"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                      <div class="row">
+                        <div class="col-md-3 col-xs-6" style="text-align: center;">
+                          <%= text_field_tag "knob1", "0", {"data-fgColor" => "#66CC66", "data-angleOffset" => "-125", "data-angleArc" =>"250"} %>
+                        </div>
+                        <div class="col-md-3 " style="text-align: center;">
+                          <%= text_field_tag "knob2", "0", {"data-fgColor" => "#66CC66", "data-angleOffset" => "-125", "data-angleArc" =>"250"} %>
+                        </div>
+                        <div class="col-md-3 col-xs-6" style="text-align: center;">
+                          <%= text_field_tag "knob3", "0", {"data-fgColor" => "#66CC66", "data-angleOffset" => "-125", "data-angleArc" =>"250"} %>
+                        </div>
+                        <div class="col-md-3" style="text-align: center;">
+                          <%= text_field_tag "knob4", "0", {"data-fgColor" => "#66CC66", "data-angleOffset" => "-125", "data-angleArc" =>"250"} %>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!--End-->
+                <!-- Small boxes (Stat box) -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box box-primary">
+                            <div class="box-header">
+                                <i class="fa fa-warning"></i>
+                                <h3 class="box-title">Warnings</h3>
+                                <div class="pull-right box-tools">
+                                    <button class="btn btn-primary btn-sm" data-widget='remove' data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+                                </div>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div><!-- /.col -->
+                    <div class="col-md-3">
+                        <div class="box box-primary">
+                            <div class="box-header">
+                                <i class=""></i>
+                                <h3 class="box-title"></h3>
+                                <div class="pull-right box-tools">
+                                    <button class="btn btn-primary btn-sm" data-widget='remove' data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+                                </div>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div><!-- /.col -->
+
+                         <div class="col-md-3">
+                        <div class="box box-primary">
+                            <div class="box-header">
+                                <i class=""></i>
+                                <h3 class="box-title"></h3>
+                                <div class="pull-right box-tools">
+                                    <button class="btn btn-primary btn-sm" data-widget='remove' data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+                                </div>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                            <div id="Ad1" class="callout callout-info Ad" style="display:none">
+                                    <h4>Walmart</h4>
+                                    <p>Ad1</p>
+                                </div>
+
+                                  <div id="Ad2" class="callout callout-info Ad" style="display:none">
+                                    <h4>Retail</h4>
+                                    <p>Ad2</p>
+                                </div>
+
+                                  <div id="Ad3" class="callout callout-info Ad" style="display:none">
+                                    <h4>XYX</h4>
+                                    <p>Ad3</p>
+                                </div>
+
+                            </div><!-- /.box-body -->
+                         </div><!-- /.box -->
+                    </div><!-- /.col -->
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box box-primary">
+                            <div class="box-header">
+                                <i class="fa fa-bookmark-o"></i>
+                                <h3 class="box-title">Personalized Settings</h3>
+                                <div class="pull-right box-tools">
+                                    <button class="btn btn-primary btn-sm" data-widget='remove' data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+                                </div>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                             <div class="alert alert-success alert-dismissable">
+                                    <i class="fa fa-check"></i>
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                     A/C Setting
+                                </div>
+                             <div class="alert alert-success alert-dismissable">
+                                    <i class="fa fa-check"></i>
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                     Rear View Mirror
+                                </div>
+                             <div class="alert alert-success alert-dismissable">
+                                    <i class="fa fa-check"></i>
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                     Seat Adjustment
+                                </div>
+
+                              <div class="alert alert-info alert-dismissable">
+                                    <i class="fa fa-info"></i>
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                     Playing your Favorite Music.
+                                     <div id="sparkline-1"></div>
+                                </div>
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div><!-- /.col -->
+                     <div class="col-md-6">
+                        <div class="box box-primary">
+                            <div class="box-header">
+                                <i class=""></i>
+                                <h3 class="box-title"></h3>
+                                <div class="pull-right box-tools">
+                                    <button class="btn btn-primary btn-sm" data-widget='remove' data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+                                </div>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                              <div id="map_canvas">
+
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div><!-- /.col -->
+
+
+
+                </div>
+
+                <!-- /.row -->
+            </section><!-- /.content -->
+        </aside><!-- /.right-side -->
+    </div><!-- ./wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="layout">
+  <div class="centre">Some Text</div>
+  <div class="centre">Some Text</div>
+  <div class="centre">Some Text</div>
+</div>
+
+
+<div class="layout">
+
+    <div style="float: left">rjas</div>
+
+    <div style="display: inline"> slklk </div>
+
+    <div style="float: right"> ooo </div>
+
+</div>
+ -->
+
+<style>
+div.centre
+{
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+div.layout
+{
+  text-align: center;
+}
+
+/*div.centre
+{
+  text-align: left;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+</style>
