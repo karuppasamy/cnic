@@ -1,10 +1,18 @@
 Rails.application.routes.draw do
-  resources :dashboards
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+
+
+  get 'dashboards/home', :to => "dashboards#home"
+
+  get 'dashboards', :to => "dashboards#index"
+
+  # resources :dashboards
+
   root 'dashboards#index'
 
   # Example of regular route:
